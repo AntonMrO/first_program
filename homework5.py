@@ -10,7 +10,6 @@ print(mutable_list)
 mutable_list[0] = 77        #замена по 1 элементу в списке
 mutable_list[3] = True
 mutable_list[-2] = "element_3"
-print(mutable_list)
 
 mutable_list = [66, 99, 333, False, "element_1", "element_2", "element_3", "element_4"] #замена списка
 print(mutable_list[0:4])
