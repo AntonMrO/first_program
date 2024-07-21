@@ -6,7 +6,7 @@ print(immutable_var)
 immutable_var[1] = 72       #кортеж не является изменяемым списком, элементы менять не возможно. Выдает ошибку
     #3
 mutable_list = [88, 99, 111, False, "element_1", "element_2", 35.4, 13.23]
-print(mutable_list)
+
 mutable_list[0] = 77        #замена по 1 элементу в списке
 mutable_list[3] = True
 mutable_list[-2] = "element_3"
