@@ -8,15 +8,15 @@ for i in range(len(numbers)):
         continue
 
     for j in range(2, numbers[i]):
-        if numbers[i] % j == 0 and numbers[i] > j:      #проверка остатка от деления на число, которое меньше проверяемого
+        if numbers[i] % j == 0:      #проверка остатка от деления на число, которое меньше проверяемого
             is_prime = False
             break
-        elif numbers[i] != j:
+        else:
             is_prime = True
 
-    if is_prime == False:                           #составление списка простых и не простых чисел в зависимости от флага is_Prime
+    if is_prime == 0:                           #составление списка простых и не простых чисел в зависимости от флага is_Prime
         not_primes.append(numbers[i])
-    elif is_prime == True:
+    else:
         primes.append(numbers[i])
 
 print('Простые числа:',primes)
